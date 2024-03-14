@@ -23,7 +23,7 @@ data = np.array(padded_data)
 labels = np.array(data_dict['labels'])
 
 # Split the data into training and test sets
-x_train, x_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, shuffle=True, stratify=labels)
+x_train, x_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, shuffle=True)
 
 # Initialize and train the RandomForestClassifier
 model = RandomForestClassifier(n_jobs=-1)
